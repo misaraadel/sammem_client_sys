@@ -12,6 +12,7 @@
     <link rel="shortcut icon" href="assets/images/favicon.png">
     <link href="assets/css/lib/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/dropzone/min/dropzone.min.css" rel="stylesheet" type="text/css" />
     <!--english version -->
     <!-- <link href="assets/css/lib/app.min.css" id="app-style" rel="stylesheet" type="text/css" /> -->
     <link href="assets/css/lib/app-rtl.min.css" id="app-style" rel="stylesheet" type="text/css" />
@@ -324,19 +325,19 @@
                   </span>
                 </a>
 
-                <ul class="sub-menu" aria-expanded="false">
-                  <li>
-                    <a href="orders.html">
-                      الطلبات
-                    </a>
-                  </li>
+                  <ul class="sub-menu" aria-expanded="false">
+                    <li>
+                      <a href="orders.html">
+                        الطلبات
+                      </a>
+                    </li>
 
-                  <li>
-                    <a href="add-order.html">
-                      اضافة طلب 
-                    </a>
-                  </li>
-                </ul>
+                    <li>
+                      <a href="add-order.html">
+                        اضافة طلب 
+                      </a>
+                    </li>
+                  </ul>
               </li>
 
               <li>
@@ -363,246 +364,98 @@
               <div class="col-12">
                 <div class="page-title-box d-flex align-items-center justify-content-between">
                   <h4 class="mb-0">
-                    الرئيسية
+                    الطلبات
                   </h4>
                 </div>
               </div>
-            </div>
 
-            <div class="row">
-              <div class="col-lg-4 col-md-6 col-12 mb-4">
+              <div class="col-12">
                 <div class="card">
                   <div class="card-body">
-                    <div class="float-right mt-2">
-                      <div id="total-revenue-chart"></div>
-                    </div>
-                    <div>
-                      <h4 class="mb-1 mt-1">
-                        <span data-plugin="counterup">
-                        34,152
-                        </span>
-                      </h4>
+                    <form action="">
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12">
+                          <div class="row">
+                            <div class="col-10">
+                              <div class="form-group">
+                                <label for="" class="col-form-label">
+                                  قم باختيار المشروع
+                                </label>
+    
+                                
+                                <select name="" id=""  class="form-control">
+                                  <option value="">
+                                    اسم المشروع
+                                  </option>
+                                  <option value="">
+                                    اسم المشروع
+                                  </option>
+                                </select>
+                              </div>
+                            </div>
 
-                      <p class="text-muted mb-0">
-                        عدد الملفات المصممة
-                      </p>
-                    </div>
+                            <div class="col-2">
+                              <div class="d-flex w-100 h-100 align-items-center align-content-center justify-content-center">
+                                <a href="#" class="btn btn-custom d-flex align-items-center mt-4 justify-content-center align-content-center chat-send w-md waves-effect waves-light" style="width: 100%">
+                                  <i class="bx bxs-add-to-queue"></i>
 
-                    <p class="text-muted mt-3 mb-0">
-                      <span class="text-success mr-1">
-                        <i class="mdi mdi-arrow-up-bold ml-1"></i>
-                        2.65%
-                      </span> 
-                    </p>
-                  </div>
-                </div>
-              </div> 
+                                  <span class="d-sm-inline-block mx-2">
+                                    المزيد
+                                  </span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
 
-              <div class="col-lg-4 col-md-6 col-12 mb-4">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="float-right mt-2">
-                      <div id="orders-chart"> </div>
-                    </div>
-                    
-                    <div>
-                      <h4 class="mb-1 mt-1">
-                        <span data-plugin="counterup">5,643</span>
-                      </h4>
-                      
-                      <p class="text-muted mb-0">
-                        إجمالي الطلبات
-                      </p>
-                    </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                          <div class="form-group">
+                            <label for="" class="col-form-label">
+                              عنوان الطلب
+                            </label>
 
-                    <p class="text-muted mt-3 mb-0">
-                      <span class="text-danger mr-1">
-                        <i class="mdi mdi-arrow-down-bold ml-1"></i>
-                        0.82%
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </div>
+                            <input type="text" class="form-control" placeholder="عنوان الطلب">
+                          </div>
+                        </div>
 
-              <div class="col-lg-4 col-md-6 col-12 mb-4">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="float-right mt-2">
-                      <div id="growth-chart"></div>
-                    </div>
-                    
-                    <div>
-                      <h4 class="mb-1 mt-1">
-                        <span data-plugin="counterup">5,643</span>
-                      </h4>
-                      
-                      <p class="text-muted mb-0">
-                        عدد النقاط المتبقية
-                      </p>
-                    </div>
+                        <div class="col-12">
+                          <div class="dropzone dz-clickable">
+                            <div class="dz-message needsclick">
+                              <div class="mb-3">
+                                <i class="display-4 text-muted uil uil-cloud-upload"></i>
+                              </div>
+                                
+                              <h4>ارفاق ملفات</h4>
+                            </div>
+                          </div>
+                        </div>
 
-                    <p class="text-muted mt-3 mb-0">
-                      <span class="text-danger mr-1">
-                        <i class="mdi mdi-arrow-down-bold ml-1"></i>
-                        0.82%
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </div>
+                        <div class="col-12 mt-4">
+                          <div class="form-group">
+                            <label for="">
+                              عبر عن احتياجك
+                            </label>
 
-              <div class="col-lg-3 col-md-6 col-12 mb-4">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="float-right mt-2">
-                        <input class="knob" data-width="40" data-height="40"
-                          data-fgColor="#342E74" data-displayinput="false" value="80"/>
-                    </div>
-                    
-                    <div>
-                      <h4 class="mb-1 mt-1">
-                        <span data-plugin="counterup">5,643</span>
-                      </h4>
-                      
-                      <p class="text-muted mb-0">
-                        إجمالي المشاريع
-                      </p>
-                    </div>
+                            <textarea name="" class="form-control" placeholder="عبر عن احتياجك للعمل باختصار" id="" cols="30" rows="10"></textarea>
+                          </div>
+                        </div>
 
-                    <p class="text-muted mt-3 mb-0">
-                      <span class="text-danger mr-1">
-                        <i class="mdi mdi-arrow-down-bold ml-1"></i>
-                        0.82%
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </div>
+                        <div class="col-lg-4 col-12 mx-auto mt-4">
+                          <div class="d-flex align-items-center align-content-center justify-content-center">
+                            <a href="#" class="btn btn-custom d-flex align-items-center justify-content-center align-content-center chat-send w-md waves-effect waves-light">
+                              <i class="bx bx-plus-medical"></i>
 
-              <div class="col-lg-3 col-md-6 col-12 mb-4">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="float-right mt-2">
-                      <div id="customers-chart"> </div>
-                    </div>
-
-                    <div>
-                      <h4 class="mb-1 mt-1">
-                        <span data-plugin="counterup">
-                          45,254
-                        </span>
-                      </h4>
-                        
-                      <p class="text-muted mb-0">
-                        عدد الملفات المرسلة
-                      </p>
-                    </div>
-
-                    <p class="text-muted mt-3 mb-0">
-                      <span class="text-danger mr-1">
-                        <i class="mdi mdi-arrow-down-bold ml-1"></i>
-                        6.24%
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </div> 
-
-              <div class="col-lg-3 col-md-6 col-12 mb-4">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="float-right mt-2">
-                      <input class="knob" data-width="40" data-height="40"
-                        data-fgColor="#C5248B" data-displayinput="false" value="35"/>
-                    </div>
-                    
-                    <div>
-                      <h4 class="mb-1 mt-1">
-                        <span data-plugin="counterup">5,643</span>
-                      </h4>
-                      
-                      <p class="text-muted mb-0">
-                        عدد النقاط المتبقية
-                      </p>
-                    </div>
-
-                    <p class="text-muted mt-3 mb-0">
-                      <span class="text-danger mr-1">
-                        <i class="mdi mdi-arrow-down-bold ml-1"></i>
-                        0.82%
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-6 col-12 mb-4">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="float-right mt-2">
-                      <input class="knob" data-width="40" data-height="40"
-                        data-fgColor="#DC3545" data-displayinput="false" value="35"/>
-                    </div>
-                    
-                    <div>
-                      <h4 class="mb-1 mt-1">
-                        <span data-plugin="counterup">5,643</span>
-                      </h4>
-                      
-                      <p class="text-muted mb-0">
-                        اجمالي التعليقات
-                      </p>
-                    </div>
-
-                    <p class="text-muted mt-3 mb-0">
-                      <span class="text-danger mr-1">
-                        <i class="mdi mdi-arrow-down-bold ml-1"></i>
-                        0.82%
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div> 
-
-            <div class="row">
-              <div class="col-12 mb-4">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="float-right">
-                      <div class="dropdown">
-                        <a class="dropdown-toggle text-reset" href="#" id="dropdownMenuButton5"
-                          data-toggle="dropdown" aria-haspopup="true"
-                          aria-expanded="false">
-                          <span class="font-weight-semibold">
-                            ترتيب حسب :
-                          </span>
-
-                          <span class="text-muted">
-                            السنة
-                            <i class="mdi mdi-chevron-down ml-1"></i>
-                          </span>
-                        </a>
-
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
-                          <a class="dropdown-item" href="#">الاسبوعي</a>
-                          <a class="dropdown-item" href="#">الشهري</a>
-                          <a class="dropdown-item" href="#">السنة</a>
+                              <span class="d-sm-inline-block mx-2">
+                                حفظ 
+                              </span>
+                            </a>
+                          </div>
                         </div>
                       </div>
-                    </div>
-
-                    <h4 class="card-title mb-4">
-                      تقارير الاداء 
-                    </h4>
-
-                    <div class="mt-3">
-                      <div id="sales-analytics-chart" class="apex-charts" dir="ltr"></div>
-                    </div>
-                  </div> 
+                    </form>
+                  </div>
                 </div>
-              </div> 
+              </div>
             </div>
           </div> 
         </div>
@@ -610,26 +463,16 @@
     </div>
 
     <script src="assets/libs/jquery/jquery.min.js"></script>
-
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-
     <script src="assets/libs/metismenu/metisMenu.min.js"></script>
-
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
-
     <script src="assets/libs/node-waves/waves.min.js"></script>
-
     <script src="assets/libs/waypoints/lib/jquery.waypoints.min.js"></script>
-
     <script src="assets/libs/jquery.counterup/jquery.counterup.min.js"></script>
 
-    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+    <!-- Plugins js -->
+    <script src="assets/libs/dropzone/min/dropzone.min.js"></script>
 
-    <script src="assets/js/pages/apexcharts.init.js"></script>
-
-    <script src="assets/js/pages/dashboard.init.js"></script>
-    <script src="assets/libs/jquery-knob/jquery.knob.min.js"></script> 
-    <script src="assets/js/pages/jquery-knob.init.js"></script> 
     <script src="assets/js/app.js"></script>
   </body>
 </html>

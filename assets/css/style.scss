@@ -17,6 +17,80 @@ textarea{
     align-items: center;
     justify-content: center;
 }
+
+.navbar-header,
+.simplebar-content-wrapper,
+.btn-custom {
+    background-color: #342E74 !important;
+}
+
+.icon-btn {
+    width: 40px !important;
+    height: 40px !important;
+    padding: 0px !important;
+}
+
+td {
+    vertical-align: middle !important;
+
+    .table-img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+    }
+}
+
+table {
+    border: 1px solid rgba($color: #342E74, $alpha: 0.1);
+}
+
+
+.btn-custom {
+    color: #fff;
+    width: 200px;
+    background: #342E74;
+
+    i {
+        transition: all .3s linear;
+    }
+
+    &:hover {
+        i {
+            transform: rotate(45deg);
+            color: #fff;
+        }
+
+        span {
+            color: #fff;
+        }
+    }
+}
+
+.vertical-menu .vertical-menu-btn i, label {
+    color: #342E74;
+}
+
+#sidebar-menu ul li ul.sub-menu li a,
+#sidebar-menu ul li ul.sub-menu li a:hover,
+#sidebar-menu ul li a i,
+#sidebar-menu ul li a:hover i,
+#sidebar-menu ul li a:hover,
+#sidebar-menu ul li a,
+.app-search span,
+.app-search input,
+.app-search input:hover,
+.noti-icon i,
+.header-item,
+.header-item:hover,
+.app-search input::placeholder {
+    color: #fff;
+}
+
+.navbar-header .dropdown.show .header-item,
+.mm-active>a {
+    background: transparent !important;
+}
+
 .profile-img{
     width: 100px;
     height: 100px;
@@ -35,7 +109,11 @@ table{
     width: 100% !important;
     
     thead {
-        background-color: #f7f7f7;
+        background-color: #342E74;
+        
+        th {
+            color: #fff !important;
+        }
     }
         
     th, td {

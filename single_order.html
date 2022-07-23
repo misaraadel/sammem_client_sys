@@ -325,23 +325,23 @@
                   </span>
                 </a>
 
-                  <ul class="sub-menu" aria-expanded="false">
-                    <li>
-                      <a href="#">
-                        الطلبات
-                      </a>
-                    </li>
+                <ul class="sub-menu" aria-expanded="false">
+                  <li>
+                    <a href="orders.html">
+                      الطلبات
+                    </a>
+                  </li>
 
-                    <li>
-                      <a href="#">
-                        اضافة طلب 
-                      </a>
-                    </li>
-                  </ul>
+                  <li>
+                    <a href="add-order.html">
+                      اضافة طلب 
+                    </a>
+                  </li>
+                </ul>
               </li>
 
               <li>
-                <a  href="#" class="waves-effect">
+                <a  href="projects.html" class="waves-effect">
                   <i class="uil-file-alt"></i>
                   
                   <span>
@@ -412,6 +412,28 @@
                             </div>
                           </div>
                         </div>
+
+                        <div class="col-12 mt-4">
+                          <div class="form-group">
+                            <label for="">
+                              عبر عن احتياجك
+                            </label>
+
+                            <textarea name="" class="form-control" placeholder="عبر عن احتياجك للعمل باختصار" id="" cols="30" rows="10"></textarea>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-4 col-12 mx-auto mt-4">
+                          <div class="d-flex align-items-center align-content-center justify-content-center">
+                            <a href="#" class="btn btn-custom d-flex align-items-center justify-content-center align-content-center chat-send w-md waves-effect waves-light">
+                              <i class="uil-search float-right"></i>
+
+                              <span class="d-sm-inline-block mx-2">
+                                بحث 
+                              </span>
+                            </a>
+                          </div>
+                        </div>
                       </div>
                     </form>
                   </div>
@@ -424,44 +446,27 @@
                     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                       <li class="nav-item" role="presentation">
                         <a class="nav-link active" id="pills-upload-tab" data-toggle="pill" href="#pills-upload" role="tab" aria-controls="pills-upload" aria-selected="true">
-                          تم الرفع
+                          عنوان الطلب
                         </a>
                       </li>
 
                       <li class="nav-item" role="presentation">
                         <a class="nav-link" id="pills-accept-tab" data-toggle="pill" href="#pills-accept" role="tab" aria-controls="pills-accept" aria-selected="false">
-                          تم تاكيد الطلب
+                          تفاصيل الطلب
+
                         </a>
                       </li>
 
                       <li class="nav-item" role="presentation">
                         <a class="nav-link" id="pills-end-tab" data-toggle="pill" href="#pills-end" role="tab" aria-controls="pills-end" aria-selected="false">
-                          تم الانتهاء
-                        </a>
-                      </li>
-
-                      <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="pills-reject-tab" data-toggle="pill" href="#pills-reject" role="tab" aria-controls="pills-reject" aria-selected="false">
-                          تم الرفض
-                        </a>
-                      </li>
-
-                      <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="pills-edit-tab" data-toggle="pill" href="#pills-edit" role="tab" aria-controls="pills-edit" aria-selected="false">
-                          طلب تعديل
-                        </a>
-                      </li>
-
-                      <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="pills-add-tab" data-toggle="pill" href="#pills-add" role="tab" aria-controls="pills-add" aria-selected="false">
-                          طلب إضافه
+                          التعليقات
                         </a>
                       </li>
                     </ul>
 
                     <div class="tab-content" id="pills-tabContent">
                       <div class="tab-pane fade show active" id="pills-upload" role="tabpanel" aria-labelledby="pills-upload-tab">
-                        <div class="table-responsive">
+                        <div class="table-responsive mb-3">
                           <table class="table">
                             <thead>
                               <tr>
@@ -474,23 +479,15 @@
                                 </th>
 
                                 <th>
-                                  المشروع
+                                  نوع الطلب
                                 </th>
 
                                 <th>
-                                  التاريخ
+                                  الحالة 
                                 </th>
 
                                 <th>
-                                  الحالة
-                                </th>
-
-                                <th>
-                                  اضافة مصمم
-                                </th>
-
-                                <th>
-                                  الخيارات
+                                  ملاحظات إضافيه 
                                 </th>
                               </tr>
                             </thead>
@@ -502,38 +499,78 @@
                                 </td>
 
                                 <td>
-                                  تصميم تقرير هممكو // محمد السبيعي	
+                                  تصميم العام الماضي
                                 </td>
 
                                 <td>
-                                  محمد الشرفي
+                                  طلب إضافه
                                 </td>
 
                                 <td>
-                                  2022-04-21 16:04:34	
+                                  تم تاكيد الطلب
                                 </td>
 
                                 <td>
-                                  تم الانتهاء
+                                  لا يوجد ملاحظات
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+
+                        <div class="table-responsive">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th>
+                                  #
+                                </th>
+
+                                <th>
+                                  ارفاق ملفات	
+                                </th>
+
+                                <th>
+                                  اسم الملف	
+                                </th>
+
+                                <th>
+                                  تاريخ الارسال	 
+                                </th>
+
+                                <th>
+                                  معاينه | تحميل 
+                                </th>
+                              </tr>
+                            </thead>
+
+                            <tbody>
+                              <tr>
+                                <td>
+                                  1
                                 </td>
 
                                 <td>
-                                  اسم المصمم
+                                  <img src="assets/images/pdf.png" class="table-img" alt="">
                                 </td>
 
                                 <td>
-                                  <div class="d-flex align-items-center justify-content-center mb-2">
-                                    <!-- <a href="#" class="btn d-flex align-items-center justify-content-between align-content-center btn-primary chat-send waves-effect waves-light">
-                                      <i class="uil-edit"></i>
-                                    </a> -->
+                                  التقرير السنوي للجمعية (1).pdf	
+                                </td>
 
-                                    <a href="single_order.html" class="btn mx-2 d-flex align-items-center justify-content-between align-content-center btn-success chat-send waves-effect waves-light">
+                                <td>
+                                  2022-07-21 11:57:20		
+                                </td>
+
+                                <td>
+                                  <div class="d-flex align-items-center align-content-center justify-content-center">
+                                    <a href="single_order.html" class="btn icon-btn mx-2 h-100 d-flex align-items-center justify-content-center align-content-center btn-success chat-send waves-effect waves-light">
                                       <i class="uil-eye"></i>
                                     </a>
-
-                                    <!-- <button class="btn d-flex align-items-center justify-content-between align-content-center btn-danger  chat-send waves-effect waves-light">
-                                      <i class="uil-trash-alt"></i>
-                                    </button> -->
+                                    
+                                    <a href="#" class="btn h-100 icon-btn d-flex align-items-center justify-content-center align-content-center btn-primary chat-send waves-effect waves-light" >
+                                      <i class="bx bx-download"></i>
+                                    </a>
                                   </div>
                                 </td>
                               </tr>
@@ -543,23 +580,243 @@
                       </div>
 
                       <div class="tab-pane fade" id="pills-accept" role="tabpanel" aria-labelledby="pills-accept-tab">
+                        <div class="table-responsive mb-3">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th>
+                                  #
+                                </th>
 
+                                <th>
+                                  المشروع
+                                </th>
+
+                                <th>
+                                  عنوان الطلب
+                                </th>
+
+                                <th>
+                                  المقاس 
+                                </th>
+                              </tr>
+                            </thead>
+
+                            <tbody>
+                              <tr>
+                                <td>
+                                  1
+                                </td>
+
+                                <td>
+                                  محمد الشرفي
+                                </td>
+
+                                <td>
+                                  تصميم تقرير الجمعية الخيرية لتحفيظ القرآن
+                                </td>
+
+                                <td>
+                                  مقاس 25 سم عرضي * 17 سم طولي
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+
+                        <div class="table-responsive mb-3">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th>
+                                  #
+                                </th>
+
+                                <th>
+                                  مرفقات المشروع	
+                                </th>
+
+                                <th>
+                                  اسم الملف	
+                                </th>
+
+                                <th>
+                                  تاريخ الارسال	 
+                                </th>
+
+                                <th>
+                                  معاينه | تحميل 
+                                </th>
+                              </tr>
+                            </thead>
+
+                            <tbody>
+                              <tr>
+                                <td>
+                                  1
+                                </td>
+
+                                <td>
+                                  <img src="assets/images/doc.png" class="table-img" alt="">
+                                </td>
+
+                                <td>
+                                  التقرير السنوي 2021 عرضي مقاس 16.5×24سم (1).docx	
+                                </td>
+
+                                <td>
+                                  2022-07-21 11:57:20		
+                                </td>
+
+                                <td>
+                                  <div class="d-flex align-items-center align-content-center justify-content-center">
+                                    <a href="single_order.html" class="btn icon-btn mx-2 h-100 d-flex align-items-center justify-content-center align-content-center btn-success chat-send waves-effect waves-light">
+                                      <i class="uil-eye"></i>
+                                    </a>
+                                    
+                                    <a href="#" class="btn h-100 icon-btn d-flex align-items-center justify-content-center align-content-center btn-primary chat-send waves-effect waves-light" >
+                                      <i class="bx bx-download"></i>
+                                    </a>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+
+                        <div class="table-responsive mb-3">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th>
+                                  #
+                                </th>
+
+                                <th>
+                                  الملف المرسل من المبدع	
+                                </th>
+
+                                <th>
+                                  اسم الملف	
+                                </th>
+
+                                <th>
+                                  تاريخ الارسال	 
+                                </th>
+
+                                <th>
+                                  وقت الإنجاز	
+                                </th>
+
+                                <th>
+                                  معاينه | تحميل 
+                                </th>
+                              </tr>
+                            </thead>
+
+                            <tbody>
+                              <tr>
+                                <td>
+                                  1
+                                </td>
+
+                                <td>
+                                  <img src="assets/images/doc.png" class="table-img" alt="">
+                                </td>
+
+                                <td>
+                                  التقرير السنوي 2021 عرضي مقاس 16.5×24سم (1).docx	
+                                </td>
+
+                                <td>
+                                  2022-07-21 11:57:20		
+                                </td>
+
+                                <td>
+                                  3 ساعات فقط
+                                </td>
+
+                                <td>
+                                  <div class="d-flex align-items-center align-content-center justify-content-center">
+                                    <a href="single_order.html" class="btn icon-btn mx-2 h-100 d-flex align-items-center justify-content-center align-content-center btn-success chat-send waves-effect waves-light">
+                                      <i class="uil-eye"></i>
+                                    </a>
+                                    
+                                    <a href="#" class="btn h-100 icon-btn d-flex align-items-center justify-content-center align-content-center btn-primary chat-send waves-effect waves-light" >
+                                      <i class="bx bx-download"></i>
+                                    </a>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
                       </div>
 
                       <div class="tab-pane fade" id="pills-end" role="tabpanel" aria-labelledby="pills-end-tab">
+                        <div class="table-responsive">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th>
+                                  #
+                                </th>
 
-                      </div>
-                      
-                      <div class="tab-pane fade" id="pills-reject" role="tabpanel" aria-labelledby="pills-reject-tab">
+                                <th>
+                                 اسم المعلق
+                                </th>
 
-                      </div>
+                                <th>
+                                  التعليق
+                                </th>
+                              </tr>
+                            </thead>
 
-                      <div class="tab-pane fade" id="pills-edit" role="tabpanel" aria-labelledby="pills-edit-tab">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  1
+                                </td>
 
-                      </div>
-                      
-                      <div class="tab-pane fade" id="pills-add" role="tabpanel" aria-labelledby="pills-add-tab">
+                                <td>
+                                  محمد احمد
+                                </td>
 
+                                <td>
+                                  تفاصيل التعليق كاملا 
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  2
+                                </td>
+
+                                <td>
+                                  محمد احمد
+                                </td>
+
+                                <td>
+                                  تفاصيل التعليق كاملا 
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  3
+                                </td>
+
+                                <td>
+                                  محمد احمد
+                                </td>
+
+                                <td>
+                                  تفاصيل التعليق كاملا 
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
                       </div>
                     </div>
                   </div>

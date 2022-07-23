@@ -122,6 +122,127 @@ textarea {
           justify-content: center;
 }
 
+.navbar-header,
+.simplebar-content-wrapper,
+.btn-custom {
+  background-color: #342E74 !important;
+}
+
+.icon-btn {
+  width: 40px !important;
+  height: 40px !important;
+  padding: 0px !important;
+}
+
+td {
+  vertical-align: middle !important;
+}
+
+td .table-img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+table {
+  border: 1px solid rgba(52, 46, 116, 0.1);
+}
+
+.btn-custom {
+  color: #fff;
+  width: 200px;
+  background: #342E74;
+}
+
+.btn-custom i {
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.btn-custom:hover i {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  color: #fff;
+}
+
+.btn-custom:hover span {
+  color: #fff;
+}
+
+.vertical-menu .vertical-menu-btn i, label {
+  color: #342E74;
+}
+
+#sidebar-menu ul li ul.sub-menu li a,
+#sidebar-menu ul li ul.sub-menu li a:hover,
+#sidebar-menu ul li a i,
+#sidebar-menu ul li a:hover i,
+#sidebar-menu ul li a:hover,
+#sidebar-menu ul li a,
+.app-search span,
+.app-search input,
+.app-search input:hover,
+.noti-icon i,
+.header-item,
+.header-item:hover,
+.app-search input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+#sidebar-menu ul li ul.sub-menu li a,
+#sidebar-menu ul li ul.sub-menu li a:hover,
+#sidebar-menu ul li a i,
+#sidebar-menu ul li a:hover i,
+#sidebar-menu ul li a:hover,
+#sidebar-menu ul li a,
+.app-search span,
+.app-search input,
+.app-search input:hover,
+.noti-icon i,
+.header-item,
+.header-item:hover,
+.app-search input:-ms-input-placeholder {
+  color: #fff;
+}
+
+#sidebar-menu ul li ul.sub-menu li a,
+#sidebar-menu ul li ul.sub-menu li a:hover,
+#sidebar-menu ul li a i,
+#sidebar-menu ul li a:hover i,
+#sidebar-menu ul li a:hover,
+#sidebar-menu ul li a,
+.app-search span,
+.app-search input,
+.app-search input:hover,
+.noti-icon i,
+.header-item,
+.header-item:hover,
+.app-search input::-ms-input-placeholder {
+  color: #fff;
+}
+
+#sidebar-menu ul li ul.sub-menu li a,
+#sidebar-menu ul li ul.sub-menu li a:hover,
+#sidebar-menu ul li a i,
+#sidebar-menu ul li a:hover i,
+#sidebar-menu ul li a:hover,
+#sidebar-menu ul li a,
+.app-search span,
+.app-search input,
+.app-search input:hover,
+.noti-icon i,
+.header-item,
+.header-item:hover,
+.app-search input::placeholder {
+  color: #fff;
+}
+
+.navbar-header .dropdown.show .header-item,
+.mm-active > a {
+  background: transparent !important;
+}
+
 .profile-img {
   width: 100px;
   height: 100px;
@@ -144,7 +265,11 @@ table {
 }
 
 table thead {
-  background-color: #f7f7f7;
+  background-color: #342E74;
+}
+
+table thead th {
+  color: #fff !important;
 }
 
 table th, table td {
