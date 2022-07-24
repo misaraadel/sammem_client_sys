@@ -99,13 +99,23 @@ span, p, a {
   font-weight: 700 !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .page-title-box h4 {
   font-weight: 900 !important;
   font-size: 25px !important;
 }
 
-.metismenu li {
-  margin-bottom: 15px !important;
+.metismenu.list-unstyled li {
+  padding: 10px 0px 15px 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.metismenu.list-unstyled li:last-child {
+  border: 0px !important;
+}
+
+.sub-menu li {
+  padding: 0px !important;
+  border: 0px !important;
 }
 
 .card {
@@ -916,7 +926,7 @@ h1, h2, h3, h4, h5, h6, .heading {
 .nav li a {
   width: 160px;
   height: 47px;
-  border: 1px solid var(--primary);
+  border: 1px solid;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -929,14 +939,45 @@ h1, h2, h3, h4, h5, h6, .heading {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: var(--primary);
+  color: var(--light);
   font-size: 15px;
   font-weight: 500;
+}
+
+.nav li a.red {
+  background-color: #EB1D36;
+  border-color: #EB1D36;
+}
+
+.nav li a.green {
+  background-color: #377D71;
+  border-color: #377D71;
+}
+
+.nav li a.blue {
+  background-color: #1F4690;
+  border-color: #1F4690;
+}
+
+.nav li a.yellow {
+  background-color: #FFEA11;
+  border-color: #FFEA11;
+}
+
+.nav li a.black {
+  background-color: #100F0F;
+  border-color: #100F0F;
+}
+
+.nav li a.orange {
+  background-color: #EF5B0C;
+  border-color: #EF5B0C;
 }
 
 .nav li a.active, .nav li a:hover {
   background-color: var(--primary) !important;
   color: var(--light);
+  border-color: transparent;
 }
 
 @media (max-width: 900px) {
@@ -965,6 +1006,15 @@ h1, h2, h3, h4, h5, h6, .heading {
   }
   .nav li a {
     width: 140px !important;
+  }
+  .page-title-box {
+    padding-top: 30px !important;
+  }
+  .nav-pills .nav-link {
+    font-size: 15px !important;
+  }
+  .mobile-none {
+    display: none !important;
   }
 }
 

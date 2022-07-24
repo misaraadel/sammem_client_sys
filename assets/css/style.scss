@@ -5,13 +5,23 @@ span, p, a {
     font-weight: 700 !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .page-title-box h4 {
     font-weight: 900 !important;
     font-size: 25px !important;
 }
 
-.metismenu li {
-    margin-bottom: 15px !important;
+.metismenu.list-unstyled li {
+    padding: 10px 0px 15px 0px;
+    border-bottom: 1px solid rgba($color: #fff, $alpha: 0.4);
+
+    &:last-child {
+        border: 0px !important;
+    }
+}
+
+.sub-menu li {
+    padding: 0px !important;
+    border: 0px !important;
 }
 
 .card{
@@ -578,19 +588,50 @@ h1 , h2 , h3 , h4 , h5 ,h6 , .heading{
         a {
             width: 160px;
             height: 47px;
-            border: 1px solid var(--primary);
+            border: 1px solid;
             border-radius: 10px;
             display: flex;
             align-items: center;
             align-content: center;
             justify-content: center;
-            color: var(--primary);
+            color: var(--light);
             font-size: 15px;
             font-weight: 500;
+
+            &.red {
+                background-color: #EB1D36;
+                border-color: #EB1D36;
+            }
+
+            &.green {
+                background-color: #377D71;
+                border-color: #377D71;
+            }
+
+            &.blue {
+                background-color: #1F4690;
+                border-color: #1F4690;
+            }
+
+            &.yellow {
+                background-color: #FFEA11;
+                border-color: #FFEA11;
+            }
+
+            &.black {
+                background-color: #100F0F;
+                border-color: #100F0F;
+            }
+
+            &.orange {
+                background-color: #EF5B0C;
+                border-color: #EF5B0C;
+            }
 
             &.active, &:hover {
                 background-color: var(--primary) !important;
                 color: var(--light);
+                border-color: transparent;
             }
         }
     }
@@ -628,6 +669,18 @@ h1 , h2 , h3 , h4 , h5 ,h6 , .heading{
                 width: 140px !important;
             }
         }
+    }
+
+    .page-title-box  {
+        padding-top: 30px !important;
+    }
+
+    .nav-pills .nav-link {
+        font-size: 15px !important;
+    }
+
+    .mobile-none {
+        display: none !important;
     }
 }
 
